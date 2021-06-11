@@ -1,6 +1,8 @@
+# import the libraries
 import pandas as pd
 from bdshare import get_hist_data
 
+# define the function
 def dse_hist(startdate, enddate, instrument):
   df = get_hist_data(startdate, enddate, instrument)
   df = df.sort_index(ascending = True)
